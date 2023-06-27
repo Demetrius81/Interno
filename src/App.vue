@@ -6,7 +6,7 @@
 </template> -->
 
 <template>
-  <blog-component></blog-component>
+  <blog-component :smallcardsdata="getSmallCards"></blog-component>
 </template>
 
 <script>
