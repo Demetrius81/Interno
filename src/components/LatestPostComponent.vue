@@ -2,7 +2,7 @@
   <section class="latest-post center">
     <div class="latest-post__box">
       <div class="latest-post_img">
-        <img src="../assets/img/latest-post__Photo.png" alt="Latest Post" />
+        <img src="../../public/img/latest-post__Photo.png" alt="Latest Post" />
       </div>
       <div class="latest-post__textbox">
         <h4 class="latest-post__textbox_title">

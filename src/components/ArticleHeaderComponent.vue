@@ -24,7 +24,7 @@ export default {
 .article-header {
   margin-bottom: 200px;
   height: 356px;
-  background: url("../assets/img/header__font.jpg");
+  background: url("../../public/img/header__font.jpg");
   width: 100%;
   height: 356px;
   background-repeat: no-repeat;

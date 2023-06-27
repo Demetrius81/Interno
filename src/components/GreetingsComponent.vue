@@ -52,7 +52,7 @@ export default {
   &__box {
     width: 1200px;
     height: 758px;
-    background: url("../assets/img/greetings__photo.png");
+    background: url("../../public/img/greetings__photo.png");
     background-size: contain;
     border-radius: 70px;
   }
