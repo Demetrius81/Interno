@@ -1,0 +1,66 @@
+<template>
+  <div class="logo">
+    <a class="logo_link" href="index.html">
+      <svg
+        width="34"
+        height="34"
+        viewBox="0 0 34 34"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M0 34.0003H13.4588V24.499C13.4588 22.4853 15.0898 20.8543 17.1035 20.8543C19.1172 20.8543 20.7482 22.4853 20.7482 24.499V34.0003H33.9975V0C15.2211 0 0 15.2211 0 34.0003Z"
+          fill="#CDA274"
+        />
+      </svg>
+    </a>
+    <a class="logo_link" href="index.html">
+      <span>Interno</span>
+    </a>
+  </div>
+</template>
+
+<script>
+export default {
+  name: "LogoComponent",
+
+  data() {
+    return {};
+  },
+
+  mounted() {},
+
+  methods: {},
+};
+</script>
+
+<style lang="scss" scoped>
+@import "@/styles/_variables.scss";
+@import "@/styles/_style_default.scss";
+.logo {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+
+  &_link svg {
+    width: 34px;
+    height: 34px;
+  }
+
+  &_link svg path {
+    fill: $colorLogo;
+  }
+
+  &_link span {
+    font-family: "DM Serif Display";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 125%;
+    display: flex;
+    align-items: center;
+    color: $colorTextBasic;
+  }
+}
+</style>
