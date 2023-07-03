@@ -2,46 +2,54 @@
   <div>
     <header-component></header-component>
     <article-header-component :name="pageName"></article-header-component>
-    <latest-post-component></latest-post-component>
-    <articles-news-component
-      :cardsdata="smallcardsdata"
-    ></articles-news-component>
+    <project-content-component
+      :cards="cards"
+      @change="change"
+    ></project-content-component>
     <footer-component></footer-component>
   </div>
 </template>
 
 <script>
 import ArticleHeaderComponent from "./ArticleHeaderComponent.vue";
-import ArticlesNewsComponent from "./ArticlesNewsComponent.vue";
-import FooterComponent from "./FooterComponent.vue";
 import HeaderComponent from "./HeaderComponent.vue";
-import LatestPostComponent from "./LatestPostComponent.vue";
+import FooterComponent from "./FooterComponent.vue";
+import ProjectContentComponent from "./ProjectContentComponent.vue";
+
 export default {
   components: {
     HeaderComponent,
-    FooterComponent,
     ArticleHeaderComponent,
-    LatestPostComponent,
-    ArticlesNewsComponent,
+    FooterComponent,
+    ProjectContentComponent,
   },
+
+  name: "ProjectComponent",
   props: {
-    smallcardsdata: {
+    cards: {
       type: Array,
-      default: function () {
+      required: true,
+      default() {
         return [];
       },
-      required: true,
     },
   },
-  name: "InternoBlogComponent",
   data() {
     return {
       pageName: {
-        header: "Articles & News",
-        pagePath: "Blog",
-        img: "./img/header__blog__font",
+        header: "Our project",
+        pagePath: "Project",
+        id: 2,
       },
     };
+  },
+
+  mounted() {},
+
+  methods: {
+    change(data) {
+      this.pageName.id = data;
+    },
   },
 };
 </script>

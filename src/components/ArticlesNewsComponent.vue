@@ -12,39 +12,20 @@
       </card-component>
     </div>
     <div class="small-content__pagination">
-      <div class="pagination__box">
-        <button
-          class="pagination__box_button button-left"
-          v-on:click="moveLeft()"
-          v-bind:disabled="currentPage === 1"
-        >
-          &#10094;
-        </button>
-        <button
-          class="pagination__box_button"
-          v-for="item in pagesArray"
-          :key="item.id"
-          v-bind:class="{ current: item.id === currentPage }"
-          v-on:click="setPage(item.id)"
-        >
-          {{ item.text }}
-        </button>
-        <button
-          class="pagination__box_button button-right"
-          v-on:click="moveRight()"
-          v-bind:disabled="currentPage === totalPages"
-        >
-          &#10095;
-        </button>
-      </div>
+      <pagination-component
+        @currentPageChanged="currentPageChanged"
+        :startPage="currentPage"
+        :totalPages="totalPages"
+      ></pagination-component>
     </div>
   </section>
 </template>
 
 <script>
 import CardComponent from "./CardComponent.vue";
+import PaginationComponent from "./PaginationComponent.vue";
 export default {
-  components: { CardComponent },
+  components: { CardComponent, PaginationComponent },
   name: "ArticlesNewsComponent",
   props: {
     cardsdata: {
@@ -62,35 +43,20 @@ export default {
     };
   },
   methods: {
-    moveLeft() {
-      this.currentPage--;
-    },
-    moveRight() {
-      this.currentPage++;
-    },
-    setPage(num) {
-      this.currentPage = num;
-    },
     moveToDetails(title) {
       //   window.location.href = "blog_details.html";
       console.log(title);
+    },
+    currentPageChanged(data) {
+      this.currentPage = data;
+      console.log(data);
     },
   },
   computed: {
     totalPages() {
       return Math.ceil(this.cardsdata.length / this.size);
     },
-    pagesArray() {
-      let result = [];
 
-      for (let i = 1; i <= this.totalPages; i++) {
-        result.push({
-          id: i,
-          text: i < 10 ? `0${i}` : `${i}`,
-        });
-      }
-      return result;
-    },
     cardsOnPage() {
       let result = [];
       let index = 1;
@@ -108,7 +74,6 @@ export default {
         });
         index++;
       }
-      console.log(result);
       return result;
 
       //Так было бы намного проще, но на странице 2 карточка из 6 имеет особенность в дизайне.
@@ -175,35 +140,6 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-
-  .pagination {
-    &__box {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 20px;
-      &_button {
-        height: 52px;
-        width: 52px;
-        border: $colorLogo 1px solid;
-        border-radius: 26px;
-        background: $colorBacgroundMain;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-family: "Jost";
-        font-style: normal;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 150%;
-        text-transform: capitalize;
-      }
-      .current {
-        background: $colorBacgroundBtnBigCard;
-        border: none;
-      }
-    }
   }
 }
 </style>

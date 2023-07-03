@@ -9,20 +9,108 @@
   <blog-component :smallcardsdata="getSmallCards"></blog-component>
 </template> -->
 
-<template>
+<!-- <template>
   <blog-details-component
     :tags="getTags"
     :articles="getArticles"
   ></blog-details-component>
+</template> -->
+
+<template>
+  <project-component :cards="getProjectCards"></project-component>
 </template>
 
 <script>
-import BlogDetailsComponent from "./components/BlogDetailsComponent.vue";
+import ProjectComponent from "./components/ProjectComponent.vue";
+// import BlogDetailsComponent from "./components/BlogDetailsComponent.vue";
 // import BlogComponent from "./components/BlogComponent.vue";
 // import MainComponent from "./components/MainComponent.vue";
 
 // Эти данные должны прийти с сервера в виде json. Мы их парсим и представляем в виде объекта.
 const data = {
+  projectCards: [
+    {
+      id: 1,
+      img: "./img/card_project_1.png",
+      title: "Minimal Bedroom",
+      class: "Decor / Artchitecture",
+      name: "Bed Room",
+      like: false,
+    },
+    {
+      id: 2,
+      img: "./img/card_project_2.png",
+      title: "Minimal Bedroom",
+      class: "Decor / Artchitecture",
+      name: "Bed Room",
+      like: false,
+    },
+    {
+      id: 3,
+      img: "./img/card_project_3.png",
+      title: "Minimal Bedroom",
+      class: "Decor / Artchitecture",
+      name: "Bed Room",
+      like: false,
+    },
+    {
+      id: 4,
+      img: "./img/card_project_4.png",
+      title: "Minimal Bedroom",
+      class: "Decor / Artchitecture",
+      name: "Bed Room",
+      like: false,
+    },
+    {
+      id: 5,
+      img: "./img/card_project_5.png",
+      title: "Minimal Bedroom",
+      class: "Decor / Artchitecture",
+      name: "Bed Room",
+      like: false,
+    },
+    {
+      id: 6,
+      img: "./img/card_project_6.png",
+      title: "Minimal Bedroom",
+      class: "Decor / Artchitecture",
+      name: "Bed Room",
+      like: false,
+    },
+    {
+      id: 7,
+      img: "./img/card_project_7.png",
+      title: "Minimal Bedroom",
+      class: "Decor / Artchitecture",
+      name: "Bed Room",
+      like: false,
+    },
+    {
+      id: 8,
+      img: "./img/card_project_8.png",
+      title: "Minimal Bedroom",
+      class: "Decor / Artchitecture",
+      name: "Bed Room",
+      like: false,
+    },
+    {
+      id: 9,
+      img: "./img/card_project_2.png",
+      title: "Minimal Bedroom",
+      class: "Decor / Artchitecture",
+      name: "Bed Room",
+      like: false,
+    },
+    {
+      id: 10,
+      img: "./img/card_project_4.png",
+      title: "Minimal Bedroom",
+      class: "Decor / Artchitecture",
+      name: "Bed Room",
+      like: false,
+    },
+  ],
+
   cards: [
     {
       id: 1,
@@ -384,7 +472,8 @@ const data = {
 export default {
   name: "App",
   components: {
-    BlogDetailsComponent,
+    ProjectComponent,
+    // BlogDetailsComponent,
     // MainComponent,
     // BlogComponent,
   },
@@ -401,6 +490,9 @@ export default {
     },
     getTags() {
       return data.tags;
+    },
+    getProjectCards() {
+      return data.projectCards;
     },
   },
 };

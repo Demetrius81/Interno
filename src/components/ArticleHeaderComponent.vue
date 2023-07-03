@@ -1,11 +1,20 @@
 <template>
-  <section class="article-header center">
+  <section
+    class="article-header center"
+    v-bind:class="{
+      blog: getPic === 5,
+      details: getPic === 1,
+      badroom: getPic === 2,
+      kitchen: getPic === 3,
+      livingarea: getPic === 4,
+    }"
+  >
     <div class="article-header__box">
-      <h1 class="article-header__box_title">Articles & News</h1>
+      <h1 class="article-header__box_title">{{ name.header }}</h1>
       <div class="article-header__links">
         <a href="#" class="article-header__links_text">Home</a>
         <p class="article-header__links_text">/</p>
-        <a href="#" class="article-header__links_text">Blog</a>
+        <a href="#" class="article-header__links_text">{{ name.pagePath }}</a>
       </div>
     </div>
   </section>
@@ -14,17 +23,38 @@
 <script>
 export default {
   name: "ArticleHeaderComponent",
+  props: {
+    name: {
+      type: Object,
+      default() {
+        return {
+          header: "default",
+          pagePath: "default",
+          id: 5,
+        };
+      },
+    },
+  },
+  data() {
+    return {};
+  },
+  computed: {
+    getPic() {
+      return this.name.id;
+    },
+  },
 };
 </script>
 
 <style lang="scss" scoped>
 @import "@/styles/_variables.scss";
 @import "@/styles/_style_default.scss";
+// $bgImage: "../../public/img/header__blog__font.jpg";
 
 .article-header {
   margin-bottom: 200px;
+  // background: url($bgImage);
   height: 356px;
-  background: url("../../public/img/header__font.jpg");
   width: 100%;
   height: 356px;
   background-repeat: no-repeat;
@@ -73,5 +103,25 @@ export default {
       color: $colorTextLight;
     }
   }
+}
+
+.badroom {
+  background: url("../../public/img/header__badroom__font.png");
+}
+
+.details {
+  background: url("../../public/img/header__details__font.png");
+}
+
+.blog {
+  background: url("../../public/img/header__blog__font.jpg");
+}
+
+.kitchen {
+  background: url("../../public/img/header__kitchen__font.png");
+}
+
+.livingarea {
+  background: url("../../public/img/header__living_area__font.png");
 }
 </style>
