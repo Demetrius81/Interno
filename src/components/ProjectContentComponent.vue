@@ -17,6 +17,7 @@
         v-for="item in cardsOnPage"
         :key="item.id"
         :card="item"
+        @like="like"
       >
       </project-card-component>
     </div>
@@ -100,6 +101,11 @@ export default {
       });
 
       this.$emit("changePic", item.id);
+    },
+    like(data) {
+      this.selectedCards.forEach((x) => {
+        x.like = x.id === data.id ? data.like : x.like;
+      });
     },
   },
   computed: {
