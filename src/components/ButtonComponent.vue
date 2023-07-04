@@ -1,0 +1,58 @@
+<template>
+  <button class="button">
+    <svg
+      width="10"
+      height="20"
+      viewBox="0 0 10 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M1.00012 19L9.00012 10L1.00012 1"
+        stroke="#292F36"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  </button>
+</template>
+
+<script>
+export default {
+  name: "ButtonComponent",
+
+  data() {
+    return {};
+  },
+
+  mounted() {},
+
+  methods: {},
+};
+</script>
+
+<style lang="scss" scoped>
+@import "@/styles/_variables.scss";
+@import "@/styles/_style_default.scss";
+
+.button {
+  width: 70px;
+  height: 70px;
+  border-radius: 35px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $colorBacgroundBtnBigCard;
+
+  & svg {
+    width: 10px;
+    height: 20px;
+  }
+
+  & svg path {
+    stroke: $colorTextBasic;
+  }
+}
+</style>

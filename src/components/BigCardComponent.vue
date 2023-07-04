@@ -115,15 +115,15 @@ export default {
     justify-content: center;
     align-items: center;
     background: $colorBacgroundBtnBigCard;
-  }
 
-  &__button svg {
-    width: 10px;
-    height: 20px;
-  }
+    & svg {
+      width: 10px;
+      height: 20px;
+    }
 
-  &__button svg path {
-    stroke: $colorTextBasic;
+    & svg path {
+      stroke: $colorTextBasic;
+    }
   }
 }
 </style>
