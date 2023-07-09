@@ -10,13 +10,18 @@
   <blog-details-component></blog-details-component>
 </template> -->
 
-<template>
+<!-- <template>
   <project-component></project-component>
+</template> -->
+
+<template>
+  <project-details-component></project-details-component>
 </template>
 
 <script>
-import ProjectComponent from "./views/ProjectComponent.vue";
+// import ProjectComponent from "./views/ProjectComponent.vue";
 // import BlogDetailsComponent from "./views/BlogDetailsComponent.vue";
+import ProjectDetailsComponent from "./views/ProjectDetailsComponent.vue";
 // import BlogComponent from "./views/BlogComponent.vue";
 // import MainComponent from "./views/MainComponent.vue";
 
@@ -25,8 +30,9 @@ import ProjectComponent from "./views/ProjectComponent.vue";
 export default {
   name: "App",
   components: {
-    ProjectComponent,
+    // ProjectComponent,
     // BlogDetailsComponent,
+    ProjectDetailsComponent,
     // MainComponent,
     // BlogComponent,
   },

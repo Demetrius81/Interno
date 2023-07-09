@@ -400,7 +400,16 @@ export default new Vuex.Store({
       {
         id: 1,
         img: "./img/card_project_1.png",
+        sliderPhotos: [
+          "./img/PD_Photo1.png",
+          "./img/PD_Photo2.png",
+          "./img/PD_Photo3.png",
+        ],
         title: "Minimal Bedroom",
+        header: "Minimal Look Bedrooms",
+        content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquamsem vitae turpis dignissim maximus. Aliquam sollicitudin tellumassa, vbel maximus purus posuere in. Dojrices gravida dignissim. Praesent at nibh in mi fringilla mattis. Phasellus ut dolor odio. Aenean in the ipsum vel lectus bibendum commodo. 
+
+In nec sem suscipit, convallis leo vitae, lacinia nibh. Cras amet tellus lectus. Vivamus ipsum nunc, mattis quis nibh id, pellentesque arcu. Donec a pellentesque Cras erat enim, gravida non ante vitae,elequis convallis elit, in viverra felis. Donec ultrices tellus vitae iaculisvd porta. Proin tincidunt ligula id purus porttitor.`,
         class: "Decor / Artchitecture",
         name: "Bed Room",
         like: false,
@@ -408,7 +417,16 @@ export default new Vuex.Store({
       {
         id: 2,
         img: "./img/card_project_2.png",
+        sliderPhotos: [
+          "./img/PD_Photo1.png",
+          "./img/PD_Photo2.png",
+          "./img/PD_Photo3.png",
+        ],
         title: "Minimal Bedroom",
+        header: "Minimal Look Bedrooms",
+        content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquamsem vitae turpis dignissim maximus. Aliquam sollicitudin tellumassa, vbel maximus purus posuere in. Dojrices gravida dignissim. Praesent at nibh in mi fringilla mattis. Phasellus ut dolor odio. Aenean in the ipsum vel lectus bibendum commodo. 
+
+In nec sem suscipit, convallis leo vitae, lacinia nibh. Cras amet tellus lectus. Vivamus ipsum nunc, mattis quis nibh id, pellentesque arcu. Donec a pellentesque Cras erat enim, gravida non ante vitae,elequis convallis elit, in viverra felis. Donec ultrices tellus vitae iaculisvd porta. Proin tincidunt ligula id purus porttitor.`,
         class: "Decor / Artchitecture",
         name: "Bed Room",
         like: false,
@@ -416,7 +434,16 @@ export default new Vuex.Store({
       {
         id: 3,
         img: "./img/card_project_3.png",
+        sliderPhotos: [
+          "./img/PD_Photo1.png",
+          "./img/PD_Photo2.png",
+          "./img/PD_Photo3.png",
+        ],
         title: "Minimal Bedroom",
+        header: "Minimal Look Bedrooms",
+        content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquamsem vitae turpis dignissim maximus. Aliquam sollicitudin tellumassa, vbel maximus purus posuere in. Dojrices gravida dignissim. Praesent at nibh in mi fringilla mattis. Phasellus ut dolor odio. Aenean in the ipsum vel lectus bibendum commodo. 
+
+In nec sem suscipit, convallis leo vitae, lacinia nibh. Cras amet tellus lectus. Vivamus ipsum nunc, mattis quis nibh id, pellentesque arcu. Donec a pellentesque Cras erat enim, gravida non ante vitae,elequis convallis elit, in viverra felis. Donec ultrices tellus vitae iaculisvd porta. Proin tincidunt ligula id purus porttitor.`,
         class: "Decor / Artchitecture",
         name: "Bed Room",
         like: false,
@@ -424,7 +451,16 @@ export default new Vuex.Store({
       {
         id: 4,
         img: "./img/card_project_4.png",
+        sliderPhotos: [
+          "./img/PD_Photo1.png",
+          "./img/PD_Photo2.png",
+          "./img/PD_Photo3.png",
+        ],
         title: "Minimal Bedroom",
+        header: "Minimal Look Bedrooms",
+        content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquamsem vitae turpis dignissim maximus. Aliquam sollicitudin tellumassa, vbel maximus purus posuere in. Dojrices gravida dignissim. Praesent at nibh in mi fringilla mattis. Phasellus ut dolor odio. Aenean in the ipsum vel lectus bibendum commodo. 
+
+In nec sem suscipit, convallis leo vitae, lacinia nibh. Cras amet tellus lectus. Vivamus ipsum nunc, mattis quis nibh id, pellentesque arcu. Donec a pellentesque Cras erat enim, gravida non ante vitae,elequis convallis elit, in viverra felis. Donec ultrices tellus vitae iaculisvd porta. Proin tincidunt ligula id purus porttitor.`,
         class: "Decor / Artchitecture",
         name: "Bed Room",
         like: false,
@@ -432,7 +468,16 @@ export default new Vuex.Store({
       {
         id: 5,
         img: "./img/card_project_5.png",
+        sliderPhotos: [
+          "./img/PD_Photo1.png",
+          "./img/PD_Photo2.png",
+          "./img/PD_Photo3.png",
+        ],
         title: "Minimal Bedroom",
+        header: "Minimal Look Bedrooms",
+        content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquamsem vitae turpis dignissim maximus. Aliquam sollicitudin tellumassa, vbel maximus purus posuere in. Dojrices gravida dignissim. Praesent at nibh in mi fringilla mattis. Phasellus ut dolor odio. Aenean in the ipsum vel lectus bibendum commodo. 
+
+In nec sem suscipit, convallis leo vitae, lacinia nibh. Cras amet tellus lectus. Vivamus ipsum nunc, mattis quis nibh id, pellentesque arcu. Donec a pellentesque Cras erat enim, gravida non ante vitae,elequis convallis elit, in viverra felis. Donec ultrices tellus vitae iaculisvd porta. Proin tincidunt ligula id purus porttitor.`,
         class: "Decor / Artchitecture",
         name: "Bed Room",
         like: false,
@@ -440,7 +485,16 @@ export default new Vuex.Store({
       {
         id: 6,
         img: "./img/card_project_6.png",
+        sliderPhotos: [
+          "./img/PD_Photo1.png",
+          "./img/PD_Photo2.png",
+          "./img/PD_Photo3.png",
+        ],
         title: "Minimal Bedroom",
+        header: "Minimal Look Bedrooms",
+        content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquamsem vitae turpis dignissim maximus. Aliquam sollicitudin tellumassa, vbel maximus purus posuere in. Dojrices gravida dignissim. Praesent at nibh in mi fringilla mattis. Phasellus ut dolor odio. Aenean in the ipsum vel lectus bibendum commodo. 
+
+In nec sem suscipit, convallis leo vitae, lacinia nibh. Cras amet tellus lectus. Vivamus ipsum nunc, mattis quis nibh id, pellentesque arcu. Donec a pellentesque Cras erat enim, gravida non ante vitae,elequis convallis elit, in viverra felis. Donec ultrices tellus vitae iaculisvd porta. Proin tincidunt ligula id purus porttitor.`,
         class: "Decor / Artchitecture",
         name: "Bed Room",
         like: false,
@@ -448,7 +502,16 @@ export default new Vuex.Store({
       {
         id: 7,
         img: "./img/card_project_7.png",
+        sliderPhotos: [
+          "./img/PD_Photo1.png",
+          "./img/PD_Photo2.png",
+          "./img/PD_Photo3.png",
+        ],
         title: "Minimal Bedroom",
+        header: "Minimal Look Bedrooms",
+        content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquamsem vitae turpis dignissim maximus. Aliquam sollicitudin tellumassa, vbel maximus purus posuere in. Dojrices gravida dignissim. Praesent at nibh in mi fringilla mattis. Phasellus ut dolor odio. Aenean in the ipsum vel lectus bibendum commodo. 
+
+In nec sem suscipit, convallis leo vitae, lacinia nibh. Cras amet tellus lectus. Vivamus ipsum nunc, mattis quis nibh id, pellentesque arcu. Donec a pellentesque Cras erat enim, gravida non ante vitae,elequis convallis elit, in viverra felis. Donec ultrices tellus vitae iaculisvd porta. Proin tincidunt ligula id purus porttitor.`,
         class: "Decor / Artchitecture",
         name: "Bed Room",
         like: false,
@@ -456,7 +519,16 @@ export default new Vuex.Store({
       {
         id: 8,
         img: "./img/card_project_8.png",
+        sliderPhotos: [
+          "./img/PD_Photo1.png",
+          "./img/PD_Photo2.png",
+          "./img/PD_Photo3.png",
+        ],
         title: "Minimal Bedroom",
+        header: "Minimal Look Bedrooms",
+        content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquamsem vitae turpis dignissim maximus. Aliquam sollicitudin tellumassa, vbel maximus purus posuere in. Dojrices gravida dignissim. Praesent at nibh in mi fringilla mattis. Phasellus ut dolor odio. Aenean in the ipsum vel lectus bibendum commodo. 
+
+In nec sem suscipit, convallis leo vitae, lacinia nibh. Cras amet tellus lectus. Vivamus ipsum nunc, mattis quis nibh id, pellentesque arcu. Donec a pellentesque Cras erat enim, gravida non ante vitae,elequis convallis elit, in viverra felis. Donec ultrices tellus vitae iaculisvd porta. Proin tincidunt ligula id purus porttitor.`,
         class: "Decor / Artchitecture",
         name: "Bed Room",
         like: false,
@@ -464,7 +536,16 @@ export default new Vuex.Store({
       {
         id: 9,
         img: "./img/card_project_2.png",
+        sliderPhotos: [
+          "./img/PD_Photo1.png",
+          "./img/PD_Photo2.png",
+          "./img/PD_Photo3.png",
+        ],
         title: "Minimal Bedroom",
+        header: "Minimal Look Bedrooms",
+        content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquamsem vitae turpis dignissim maximus. Aliquam sollicitudin tellumassa, vbel maximus purus posuere in. Dojrices gravida dignissim. Praesent at nibh in mi fringilla mattis. Phasellus ut dolor odio. Aenean in the ipsum vel lectus bibendum commodo. 
+
+In nec sem suscipit, convallis leo vitae, lacinia nibh. Cras amet tellus lectus. Vivamus ipsum nunc, mattis quis nibh id, pellentesque arcu. Donec a pellentesque Cras erat enim, gravida non ante vitae,elequis convallis elit, in viverra felis. Donec ultrices tellus vitae iaculisvd porta. Proin tincidunt ligula id purus porttitor.`,
         class: "Decor / Artchitecture",
         name: "Bed Room",
         like: false,
@@ -472,7 +553,16 @@ export default new Vuex.Store({
       {
         id: 10,
         img: "./img/card_project_4.png",
+        sliderPhotos: [
+          "./img/PD_Photo1.png",
+          "./img/PD_Photo2.png",
+          "./img/PD_Photo3.png",
+        ],
         title: "Minimal Bedroom",
+        header: "Minimal Look Bedrooms",
+        content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquamsem vitae turpis dignissim maximus. Aliquam sollicitudin tellumassa, vbel maximus purus posuere in. Dojrices gravida dignissim. Praesent at nibh in mi fringilla mattis. Phasellus ut dolor odio. Aenean in the ipsum vel lectus bibendum commodo. 
+
+In nec sem suscipit, convallis leo vitae, lacinia nibh. Cras amet tellus lectus. Vivamus ipsum nunc, mattis quis nibh id, pellentesque arcu. Donec a pellentesque Cras erat enim, gravida non ante vitae,elequis convallis elit, in viverra felis. Donec ultrices tellus vitae iaculisvd porta. Proin tincidunt ligula id purus porttitor.`,
         class: "Decor / Artchitecture",
         name: "Bed Room",
         like: false,
@@ -483,6 +573,25 @@ export default new Vuex.Store({
     currentChoice: "",
     size: 6,
     currentPage: 1,
+    projectCardsDetails: {
+      id: 1,
+      img: "./img/card_project_1.png",
+      sliderPhotos: [
+        "./img/PD_Photo1.png",
+        "./img/PD_Photo2.png",
+        "./img/PD_Photo3.png",
+      ],
+      title: "Minimal Bedroom",
+      header: "Minimal Look Bedrooms",
+      content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquamsem vitae turpis dignissim maximus. Aliquam sollicitudin tellumassa, vbel maximus purus posuere in. Dojrices gravida dignissim. Praesent at nibh in mi fringilla mattis. Phasellus ut dolor odio. Aenean in the ipsum vel lectus bibendum commodo. 
+
+In nec sem suscipit, convallis leo vitae, lacinia nibh. Cras amet tellus lectus. Vivamus ipsum nunc, mattis quis nibh id, pellentesque arcu. Donec a pellentesque Cras erat enim, gravida non ante vitae,elequis convallis elit, in viverra felis. Donec ultrices tellus vitae iaculisvd porta. Proin tincidunt ligula id purus porttitor.`,
+      class: "Decor / Artchitecture",
+      name: "Bed Room",
+      like: false,
+    },
+    blogCardsDetails: {},
+    sliderState: [],
   },
   getters: {
     getTotalPages: (state) =>
@@ -600,6 +709,23 @@ export default new Vuex.Store({
       state.projectCards.forEach((x) => {
         x.like = x.id === data.id ? data.like : x.like;
       });
+    },
+    CALCULATE_SLIDER_DATA(state) {
+      let index = 1;
+      state.sliderState = [];
+
+      state.projectCardsDetails.sliderPhotos.forEach((x) => {
+        state.sliderState.push({
+          id: index,
+          src: x,
+          alt: state.projectCardsDetails.header,
+          show: index === 1 ? true : false,
+        });
+        index++;
+      });
+    },
+    SET_SLIDE_TO_SHOW(state, id) {
+      state.sliderState.forEach((x) => (x.show = x.id === id));
     },
   },
   actions: {},

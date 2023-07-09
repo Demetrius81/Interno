@@ -9,7 +9,7 @@
       livingarea: getPic === 4,
     }"
   >
-    <div class="article-header__box">
+    <div class="article-header__box" v-if="name.header !== 'default'">
       <h1 class="article-header__box_title">{{ name.header }}</h1>
       <div class="article-header__links">
         <a href="#" class="article-header__links_text">Home</a>

@@ -2,24 +2,32 @@
   <div>
     <header-component></header-component>
     <article-header-component></article-header-component>
-    <details-component></details-component>
+    <project-details-content-component></project-details-content-component>
     <footer-component></footer-component>
   </div>
 </template>
 
 <script>
+import HeaderComponent from "@/components/HeaderComponent.vue";
+import FooterComponent from "@/components/FooterComponent.vue";
 import ArticleHeaderComponent from "@/components/ArticleHeaderComponent.vue";
-import DetailsComponent from "../components/DetailsComponent.vue";
-import FooterComponent from "../components/FooterComponent.vue";
-import HeaderComponent from "../components/HeaderComponent.vue";
+import ProjectDetailsContentComponent from "@/components/ProjectDetailsContentComponent.vue";
 export default {
   components: {
     HeaderComponent,
-    DetailsComponent,
     FooterComponent,
     ArticleHeaderComponent,
+    ProjectDetailsContentComponent,
   },
-  name: "InternoBlogDetailsComponent",
+  name: "InternoProjectDetailsComponent",
+
+  data() {
+    return {};
+  },
+
+  mounted() {},
+
+  methods: {},
 };
 </script>
 
