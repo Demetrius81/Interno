@@ -49,11 +49,9 @@ export default {
 <style lang="scss" scoped>
 @import "@/styles/_variables.scss";
 @import "@/styles/_style_default.scss";
-// $bgImage: "../../public/img/header__blog__font.jpg";
 
 .article-header {
   margin-bottom: 200px;
-  // background: url($bgImage);
   height: 356px;
   width: 100%;
   height: 356px;

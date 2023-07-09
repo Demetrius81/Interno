@@ -3,19 +3,18 @@
     <header-component></header-component>
     <article-header-component :name="pageName"></article-header-component>
     <latest-post-component></latest-post-component>
-    <articles-news-component
-      :cardsdata="smallcardsdata"
-    ></articles-news-component>
+    <articles-news-component></articles-news-component>
     <footer-component></footer-component>
   </div>
 </template>
 
 <script>
-import ArticleHeaderComponent from "./ArticleHeaderComponent.vue";
-import ArticlesNewsComponent from "./ArticlesNewsComponent.vue";
-import FooterComponent from "./FooterComponent.vue";
-import HeaderComponent from "./HeaderComponent.vue";
-import LatestPostComponent from "./LatestPostComponent.vue";
+import { mapMutations, mapState } from "vuex";
+import ArticleHeaderComponent from "../components/ArticleHeaderComponent.vue";
+import ArticlesNewsComponent from "../components/ArticlesNewsComponent.vue";
+import FooterComponent from "../components/FooterComponent.vue";
+import HeaderComponent from "../components/HeaderComponent.vue";
+import LatestPostComponent from "../components/LatestPostComponent.vue";
 export default {
   components: {
     HeaderComponent,
@@ -24,24 +23,21 @@ export default {
     LatestPostComponent,
     ArticlesNewsComponent,
   },
-  props: {
-    smallcardsdata: {
-      type: Array,
-      default: function () {
-        return [];
-      },
-      required: true,
-    },
-  },
   name: "InternoBlogComponent",
   data() {
     return {
       pageName: {
         header: "Articles & News",
         pagePath: "Blog",
-        img: "./img/header__blog__font",
+        id: 5,
       },
     };
+  },
+  methods: {
+    ...mapMutations(["LOAD_BLOG_PAGINATION"]),
+  },
+  beforeMount() {
+    this.LOAD_BLOG_PAGINATION();
   },
 };
 </script>

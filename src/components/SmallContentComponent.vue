@@ -10,7 +10,7 @@
     </div>
     <div class="small-content__card-box">
       <card-component
-        v-for="item in cardsdata"
+        v-for="item in smallCards.slice(0, 6)"
         :key="item.id"
         :carddata="item"
       ></card-component>
@@ -19,26 +19,14 @@
 </template>
 
 <script>
+import { mapState } from "vuex";
 import CardComponent from "./CardComponent.vue";
 export default {
   components: { CardComponent },
   name: "SmallContentComponent",
-  props: {
-    cardsdata: {
-      type: Array,
-      default: function () {
-        return [];
-      },
-      required: true,
-    },
+  computed: {
+    ...mapState(["smallCards"]),
   },
-  data() {
-    return {};
-  },
-
-  mounted() {},
-
-  methods: {},
 };
 </script>
 

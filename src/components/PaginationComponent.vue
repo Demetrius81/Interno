@@ -1,5 +1,5 @@
 <template>
-  <div class="pagination" v-show="totalPages > 1">
+  <div class="pagination" v-show="getTotalPages > 1">
     <div class="pagination__box">
       <button
         class="pagination__box_button button-left"
@@ -20,7 +20,7 @@
       <button
         class="pagination__box_button button-right"
         v-on:click="moveRight()"
-        v-bind:disabled="currentPage === totalPages"
+        v-bind:disabled="currentPage === getTotalPages"
       >
         &#10095;
       </button>
@@ -29,58 +29,24 @@
 </template>
 
 <script>
+import { mapGetters, mapMutations, mapState } from "vuex";
 export default {
   name: "PaginationComponent",
-  props: {
-    totalPages: {
-      type: Number,
-      default: 1,
-      required: true,
-    },
-    startPage: {
-      type: Number,
-      default: 1,
-      required: true,
-    },
-  },
-  data() {
-    return {
-      currentPage: this.startPage,
-    };
-  },
-
-  mounted() {},
-
   methods: {
+    ...mapMutations(["PAGE_UP", "PAGE_DOWN", "PAGE_SET"]),
     moveLeft() {
-      this.currentPage--;
-      this.chandePage();
+      this.PAGE_DOWN();
     },
     moveRight() {
-      this.currentPage++;
-      this.chandePage();
+      this.PAGE_UP();
     },
     setPage(num) {
-      this.currentPage = num;
-      this.chandePage();
-    },
-    chandePage() {
-      const data = this.currentPage;
-      this.$emit("currentPageChanged", data);
+      this.PAGE_SET(num);
     },
   },
   computed: {
-    pagesArray() {
-      let result = [];
-
-      for (let i = 1; i <= this.totalPages; i++) {
-        result.push({
-          id: i,
-          text: i < 10 ? `0${i}` : `${i}`,
-        });
-      }
-      return result;
-    },
+    ...mapState(["currentPage"]),
+    ...mapGetters(["getTotalPages", "pagesArray"]),
   },
 };
 </script>

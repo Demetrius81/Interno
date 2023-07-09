@@ -2,19 +2,17 @@
   <div>
     <header-component></header-component>
     <article-header-component :name="pageName"></article-header-component>
-    <project-content-component
-      :cards="cards"
-      @change="change"
-    ></project-content-component>
+    <project-content-component></project-content-component>
     <footer-component></footer-component>
   </div>
 </template>
 
 <script>
-import ArticleHeaderComponent from "./ArticleHeaderComponent.vue";
-import HeaderComponent from "./HeaderComponent.vue";
-import FooterComponent from "./FooterComponent.vue";
-import ProjectContentComponent from "./ProjectContentComponent.vue";
+import ArticleHeaderComponent from "../components/ArticleHeaderComponent.vue";
+import HeaderComponent from "../components/HeaderComponent.vue";
+import FooterComponent from "../components/FooterComponent.vue";
+import ProjectContentComponent from "../components/ProjectContentComponent.vue";
+import { mapMutations } from "vuex";
 
 export default {
   components: {
@@ -25,15 +23,7 @@ export default {
   },
 
   name: "ProjectComponent",
-  props: {
-    cards: {
-      type: Array,
-      required: true,
-      default() {
-        return [];
-      },
-    },
-  },
+
   data() {
     return {
       pageName: {
@@ -44,12 +34,12 @@ export default {
     };
   },
 
-  mounted() {},
-
   methods: {
-    change(data) {
-      this.pageName.id = data;
-    },
+    ...mapMutations(["LOAD_PROJECT_PAGINATION"]),
+  },
+
+  beforeMount() {
+    this.LOAD_PROJECT_PAGINATION();
   },
 };
 </script>

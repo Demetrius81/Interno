@@ -14,7 +14,7 @@
           class="tags__box_btn"
           v-on:click="checkTag(tag.id)"
           v-bind:class="{ check: tag.check }"
-          v-for="tag in datatags"
+          v-for="tag in tags"
           :key="tag.id"
         >
           {{ tag.tagName }}
@@ -25,47 +25,20 @@
 </template>
 
 <script>
+import { mapGetters, mapMutations, mapState } from "vuex";
 import ArticleComponent from "./ArticleComponent.vue";
 export default {
   components: { ArticleComponent },
   name: "InternoDetailsComponent",
-  props: {
-    datatags: {
-      type: Array,
-      required: true,
-      default() {
-        return [];
-      },
-    },
-    dataarticles: {
-      type: Array,
-      required: true,
-      default() {
-        return [];
-      },
-    },
-  },
-  data() {
-    return {
-      currentTag: "",
-    };
-  },
-
   methods: {
+    ...mapMutations(["CHECK_TAG"]),
     checkTag(id) {
-      this.datatags.forEach((x) => {
-        x.check = x.id === id;
-      });
-      this.currentTag = this.datatags.find((x) => x.check === true).tagName;
+      this.CHECK_TAG(id);
     },
   },
-
   computed: {
-    taggedArticles() {
-      return this.currentTag === ""
-        ? this.dataarticles
-        : this.dataarticles.filter((x) => x.tag === this.currentTag);
-    },
+    ...mapState(["tags", "articles", "currentTag"]),
+    ...mapGetters(["taggedArticles"]),
   },
 };
 </script>
