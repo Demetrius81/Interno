@@ -158,6 +158,10 @@ export default {
       border-radius: 26px;
       border: none;
       background: $colorBacgroundBtnBigCard;
+
+      &:hover {
+        background: $colorBacgroundBtnHover;
+      }
     }
 
     &_btn svg {
@@ -176,6 +180,10 @@ export default {
   .small-card__date-btn-box {
     &_btn {
       background: $colorBacgroundMain;
+
+      &:hover {
+        background: $colorBacgroundBtnHover;
+      }
     }
   }
 }

@@ -2,6 +2,7 @@
   <div>
     <article-header-component :name="pageName"></article-header-component>
     <project-content-component></project-content-component>
+    <footer-component></footer-component>
   </div>
 </template>
 
@@ -9,11 +10,13 @@
 import ArticleHeaderComponent from "../components/ArticleHeaderComponent.vue";
 import ProjectContentComponent from "../components/ProjectContentComponent.vue";
 import { mapMutations } from "vuex";
+import FooterComponent from "@/components/FooterComponent.vue";
 
 export default {
   components: {
     ArticleHeaderComponent,
     ProjectContentComponent,
+    FooterComponent,
   },
 
   name: "ProjectComponent",

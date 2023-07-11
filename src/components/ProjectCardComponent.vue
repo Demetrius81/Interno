@@ -121,10 +121,6 @@ export default {
   height: 30px;
   border-radius: 15px;
   border: none;
-
-  //   & svg g path {
-  //     fill: aliceblue;
-  //   }
 }
 
 .notselected svg g path {

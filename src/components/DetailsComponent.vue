@@ -89,6 +89,10 @@ export default {
         letter-spacing: 0.02em;
 
         color: $colorTextBasic;
+
+        &:hover {
+          background: $colorBacgroundBtnHover;
+        }
       }
     }
   }
@@ -107,6 +111,10 @@ export default {
     align-items: center;
     text-align: center;
     letter-spacing: 0.02em;
+
+    &:hover {
+      background: $colorTextLight;
+    }
   }
 }
 </style>

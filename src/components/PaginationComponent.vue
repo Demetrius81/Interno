@@ -75,10 +75,18 @@ export default {
       font-size: 16px;
       line-height: 150%;
       text-transform: capitalize;
+
+      &:hover {
+        background: $colorBacgroundBtnHover;
+      }
     }
     .current {
       background: $colorBacgroundBtnBigCard;
       border: none;
+
+      &:hover {
+        border: $colorLogo 1px solid;
+      }
     }
   }
 }

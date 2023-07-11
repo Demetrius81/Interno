@@ -152,6 +152,10 @@ export default {
       border-radius: 26px;
       border: none;
       background: $colorBacgroundBtnBigCard;
+
+      &:hover {
+        background: $colorBacgroundBtnHover;
+      }
     }
   }
 }

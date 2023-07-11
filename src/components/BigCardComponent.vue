@@ -8,7 +8,7 @@
         <h4 class="big-card__content_header">{{ carddata.header }}</h4>
         <p class="big-card__content_text">{{ carddata.text }}</p>
       </div>
-      <button class="big-card__button">
+      <button class="big-card__button" @click="moveToProject">
         <svg
           width="10"
           height="20"
@@ -45,6 +45,11 @@ export default {
         };
       },
       required: true,
+    },
+  },
+  methods: {
+    moveToProject() {
+      this.$router.push({ name: "projectdetails" });
     },
   },
 };
@@ -123,6 +128,10 @@ export default {
 
     & svg path {
       stroke: $colorTextBasic;
+    }
+
+    &:hover {
+      background: $colorBacgroundBtnHover;
     }
   }
 }

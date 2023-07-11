@@ -103,7 +103,7 @@ export default {
 
   &_img {
     width: 799;
-    height: 539;
+    max-height: 539;
     background: $colorBacgroundBigCardImg;
     border-radius: 50px;
     background-repeat: no-repeat;

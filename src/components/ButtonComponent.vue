@@ -58,5 +58,9 @@ export default {
   & svg path {
     stroke: $colorTextBasic;
   }
+
+  &:hover {
+    background: $colorBacgroundBtnHover;
+  }
 }
 </style>

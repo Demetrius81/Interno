@@ -3,10 +3,12 @@
     <article-header-component :name="pageName"></article-header-component>
     <latest-post-component></latest-post-component>
     <articles-news-component></articles-news-component>
+    <footer-component></footer-component>
   </div>
 </template>
 
 <script>
+import FooterComponent from "@/components/FooterComponent.vue";
 import { mapMutations } from "vuex";
 import ArticleHeaderComponent from "../components/ArticleHeaderComponent.vue";
 import ArticlesNewsComponent from "../components/ArticlesNewsComponent.vue";
@@ -16,6 +18,7 @@ export default {
     ArticleHeaderComponent,
     LatestPostComponent,
     ArticlesNewsComponent,
+    FooterComponent,
   },
   name: "BlogComponent",
   data() {

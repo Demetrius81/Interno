@@ -7,7 +7,7 @@
           There are many variations of the passages of lorem Ipsum
           fromavailable, majority.
         </p>
-        <button class="greetings__button">
+        <button class="greetings__button" @click="moveToProject">
           <div class="greetings__button_text">
             <p>Get Started</p>
           </div>
@@ -41,7 +41,11 @@ export default {
 
   mounted() {},
 
-  methods: {},
+  methods: {
+    moveToProject() {
+      this.$router.push({ name: "project" });
+    },
+  },
 };
 </script>
 
@@ -116,6 +120,11 @@ export default {
       text-align: center;
       letter-spacing: 0.02em;
       color: $colorBacgroundMain;
+    }
+
+    &:hover {
+      color: $colorBacgroundLines;
+      background: $colorTextLight;
     }
   }
 
