@@ -123,8 +123,8 @@ export default {
     }
 
     &:hover {
-      color: $colorBacgroundLines;
-      background: $colorTextLight;
+      background-color: $colorTextLight;
+      transition: all 0.3s ease;
     }
   }
 

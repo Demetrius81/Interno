@@ -109,6 +109,11 @@ export default {
     background-repeat: no-repeat;
     background-size: cover;
     overflow: hidden;
+
+    &:hover {
+      transform: scale(1.05);
+      transition: transform 0.3s ease;
+    }
   }
 
   &__date-tag {
@@ -193,5 +198,6 @@ export default {
   align-items: center;
   text-align: center;
   letter-spacing: 0.02em;
+  transition: all 0.3s ease;
 }
 </style>
