@@ -2,45 +2,26 @@
   <header class="header center">
     <logo-component></logo-component>
     <div class="header__links">
-      <a
+      <router-link
         class="header__links_link"
         v-for="link in links"
         :key="link.id"
-        :href="link.url"
-        >{{ link.name }}</a
+        :to="link.url"
+        >{{ link.name }}</router-link
       >
     </div>
   </header>
 </template>
 
 <script>
+import { mapState } from "vuex";
 import LogoComponent from "./LogoComponent.vue";
 export default {
   components: { LogoComponent },
   name: "HeaderComponent",
-
-  data() {
-    return {
-      links: [
-        {
-          name: "Home",
-          url: "index.html",
-        },
-        {
-          name: "Project",
-          url: "project.html",
-        },
-        {
-          name: "Blog",
-          url: "blog.html",
-        },
-      ],
-    };
+  computed: {
+    ...mapState(["links"]),
   },
-
-  mounted() {},
-
-  methods: {},
 };
 </script>
 

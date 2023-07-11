@@ -1,6 +1,6 @@
 <template>
   <div class="logo">
-    <a class="logo_link" href="index.html">
+    <router-link class="logo_link" to="/">
       <svg
         width="34"
         height="34"
@@ -13,10 +13,10 @@
           fill="#CDA274"
         />
       </svg>
-    </a>
-    <a class="logo_link" href="index.html">
+    </router-link>
+    <router-link class="logo_link" to="/">
       <span>Interno</span>
-    </a>
+    </router-link>
   </div>
 </template>
 

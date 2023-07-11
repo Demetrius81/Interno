@@ -8,7 +8,7 @@
       <h2 class="small-card__content_header">{{ carddata.title }}</h2>
       <div class="small-card__date-btn-box">
         <p class="small-card__date-btn-box_text">{{ carddata.date }}</p>
-        <button class="small-card__date-btn-box_btn">
+        <button class="small-card__date-btn-box_btn" @click="move()">
           <svg
             width="9"
             height="16"
@@ -57,6 +57,9 @@ export default {
   methods: {
     checkIsNegative(id) {
       return id === 2;
+    },
+    move() {
+      this.$router.push({ name: "blogdetails" });
     },
   },
 };

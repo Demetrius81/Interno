@@ -1,29 +1,23 @@
 <template>
   <div>
-    <header-component></header-component>
     <article-header-component :name="pageName"></article-header-component>
     <latest-post-component></latest-post-component>
     <articles-news-component></articles-news-component>
-    <footer-component></footer-component>
   </div>
 </template>
 
 <script>
-import { mapMutations, mapState } from "vuex";
+import { mapMutations } from "vuex";
 import ArticleHeaderComponent from "../components/ArticleHeaderComponent.vue";
 import ArticlesNewsComponent from "../components/ArticlesNewsComponent.vue";
-import FooterComponent from "../components/FooterComponent.vue";
-import HeaderComponent from "../components/HeaderComponent.vue";
 import LatestPostComponent from "../components/LatestPostComponent.vue";
 export default {
   components: {
-    HeaderComponent,
-    FooterComponent,
     ArticleHeaderComponent,
     LatestPostComponent,
     ArticlesNewsComponent,
   },
-  name: "InternoBlogComponent",
+  name: "BlogComponent",
   data() {
     return {
       pageName: {

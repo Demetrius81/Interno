@@ -1,41 +1,20 @@
-<!-- <template>
-  <main-component></main-component>
-</template> -->
-
-<!-- <template>
-  <blog-component></blog-component>
-</template> -->
-
-<!-- <template>
-  <blog-details-component></blog-details-component>
-</template> -->
-
-<!-- <template>
-  <project-component></project-component>
-</template> -->
-
 <template>
-  <project-details-component></project-details-component>
+  <div id="app">
+    <header-component></header-component>
+    <router-view />
+    <footer-component></footer-component>
+  </div>
 </template>
 
 <script>
-// import ProjectComponent from "./views/ProjectComponent.vue";
-// import BlogDetailsComponent from "./views/BlogDetailsComponent.vue";
-import ProjectDetailsComponent from "./views/ProjectDetailsComponent.vue";
-// import BlogComponent from "./views/BlogComponent.vue";
-// import MainComponent from "./views/MainComponent.vue";
-
-// Эти данные должны прийти с сервера в виде json. Мы их парсим и представляем в виде объекта.
-
+import FooterComponent from "./components/FooterComponent.vue";
+import HeaderComponent from "./components/HeaderComponent.vue";
 export default {
-  name: "App",
   components: {
-    // ProjectComponent,
-    // BlogDetailsComponent,
-    ProjectDetailsComponent,
-    // MainComponent,
-    // BlogComponent,
+    HeaderComponent,
+    FooterComponent,
   },
+  name: "App",
 };
 </script>
 

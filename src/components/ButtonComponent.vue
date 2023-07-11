@@ -1,5 +1,5 @@
 <template>
-  <button class="button">
+  <button class="button" @click="click">
     <svg
       width="10"
       height="20"
@@ -28,7 +28,11 @@ export default {
 
   mounted() {},
 
-  methods: {},
+  methods: {
+    click() {
+      this.$emit("clickbtn");
+    },
+  },
 };
 </script>
 

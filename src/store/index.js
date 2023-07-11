@@ -592,6 +592,20 @@ In nec sem suscipit, convallis leo vitae, lacinia nibh. Cras amet tellus lectus.
     },
     blogCardsDetails: {},
     sliderState: [],
+    links: [
+      {
+        name: "Home",
+        url: "/",
+      },
+      {
+        name: "Project",
+        url: "/project",
+      },
+      {
+        name: "Blog",
+        url: "/blog",
+      },
+    ],
   },
   getters: {
     getTotalPages: (state) =>
