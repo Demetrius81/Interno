@@ -50,6 +50,7 @@ export default {
 
     &:hover {
       background: $colorBacgroundBtnHover;
+      transition: all 0.3s ease;
     }
   }
 
@@ -59,6 +60,7 @@ export default {
 
     &:hover {
       background: $colorLogo;
+      transition: all 0.3s ease;
     }
   }
 }

@@ -155,6 +155,7 @@ export default {
 
       &:hover {
         background: $colorBacgroundBtnHover;
+        transition: all 0.3s ease;
       }
     }
   }

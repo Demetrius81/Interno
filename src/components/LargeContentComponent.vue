@@ -79,76 +79,76 @@ export default {
   }
 }
 
-.big-card {
-  width: $widthBigCard;
-  height: $heightBigCard;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-flow: column;
+// .big-card {
+//   width: $widthBigCard;
+//   height: $heightBigCard;
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
+//   flex-flow: column;
 
-  &__img {
-    overflow: hidden;
-    width: $widthBigCardPicture;
-    height: $heightBigCardPicture;
-    background: $colorBacgroundBigCardImg;
-    border-radius: 0px 80px 0px 0px;
-  }
-  &__box-content {
-    width: $widthBigCard;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-flow: row;
-  }
-  &__content {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-flow: column;
-    &_header {
-      font-family: "DM Serif Display";
-      font-style: normal;
-      font-weight: 400;
-      font-size: 25px;
-      line-height: 125%;
-      display: flex;
-      align-items: center;
-      letter-spacing: 0.02em;
+//   &__img {
+//     overflow: hidden;
+//     width: $widthBigCardPicture;
+//     height: $heightBigCardPicture;
+//     background: $colorBacgroundBigCardImg;
+//     border-radius: 0px 80px 0px 0px;
+//   }
+//   &__box-content {
+//     width: $widthBigCard;
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//     flex-flow: row;
+//   }
+//   &__content {
+//     display: flex;
+//     justify-content: center;
+//     align-items: flex-start;
+//     flex-flow: column;
+//     &_header {
+//       font-family: "DM Serif Display";
+//       font-style: normal;
+//       font-weight: 400;
+//       font-size: 25px;
+//       line-height: 125%;
+//       display: flex;
+//       align-items: center;
+//       letter-spacing: 0.02em;
 
-      color: $colorTextBasic;
-    }
-    &_text {
-      font-family: "Jost";
-      font-style: normal;
-      font-weight: 400;
-      font-size: 22px;
-      line-height: 150%;
-      display: flex;
-      align-items: center;
-      letter-spacing: 0.01em;
+//       color: $colorTextBasic;
+//     }
+//     &_text {
+//       font-family: "Jost";
+//       font-style: normal;
+//       font-weight: 400;
+//       font-size: 22px;
+//       line-height: 150%;
+//       display: flex;
+//       align-items: center;
+//       letter-spacing: 0.01em;
 
-      color: $colorTextLight;
-    }
-  }
-  &__button {
-    width: 70px;
-    height: 70px;
-    border-radius: 35px;
-    border: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: $colorBacgroundBtnBigCard;
-  }
+//       color: $colorTextLight;
+//     }
+//   }
+//   &__button {
+//     width: 70px;
+//     height: 70px;
+//     border-radius: 35px;
+//     border: none;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     background: $colorBacgroundBtnBigCard;
+//   }
 
-  &__button svg {
-    width: 10px;
-    height: 20px;
-  }
+//   &__button svg {
+//     width: 10px;
+//     height: 20px;
+//   }
 
-  &__button svg path {
-    stroke: $colorTextBasic;
-  }
-}
+//   &__button svg path {
+//     stroke: $colorTextBasic;
+//   }
+// }
 </style>

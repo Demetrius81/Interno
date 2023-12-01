@@ -91,6 +91,11 @@ export default {
     background: $colorBacgroundSmallCardImg;
     border-radius: 45px 45px 0px 0px;
 
+    &:hover {
+      transform: scale(1.05);
+      transition: transform 0.3s ease;
+    }
+
     &_description {
       position: absolute;
       display: flex;
@@ -161,6 +166,7 @@ export default {
 
       &:hover {
         background: $colorBacgroundBtnHover;
+        transition: all 0.3s ease;
       }
     }
 
@@ -183,6 +189,7 @@ export default {
 
       &:hover {
         background: $colorBacgroundBtnHover;
+        transition: all 0.3s ease;
       }
     }
   }

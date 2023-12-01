@@ -78,6 +78,7 @@ export default {
 
       &:hover {
         background: $colorBacgroundBtnHover;
+        transition: all 0.3s ease;
       }
     }
     .current {
@@ -86,6 +87,7 @@ export default {
 
       &:hover {
         border: $colorLogo 1px solid;
+        transition: all 0.3s ease;
       }
     }
   }
