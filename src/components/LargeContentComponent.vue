@@ -8,30 +8,21 @@
       </p>
     </div>
     <div class="large-content__card-box">
-      <big-card-component
-        v-for="card in cardsdata"
-        :key="card.id"
-        :carddata="card"
-      >
+      <big-card-component v-for="card in cards" :key="card.id" :carddata="card">
       </big-card-component>
     </div>
   </section>
 </template>
 
 <script>
+import { mapState } from "vuex";
 import BigCardComponent from "./BigCardComponent.vue";
 
 export default {
   components: { BigCardComponent },
   name: "LargeContentComponent",
-  props: {
-    cardsdata: {
-      type: Array,
-      default: function () {
-        return [];
-      },
-      required: true,
-    },
+  computed: {
+    ...mapState(["cards"]),
   },
 };
 </script>

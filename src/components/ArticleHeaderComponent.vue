@@ -9,7 +9,7 @@
       livingarea: getPic === 4,
     }"
   >
-    <div class="article-header__box">
+    <div class="article-header__box" v-if="name.header !== 'default'">
       <h1 class="article-header__box_title">{{ name.header }}</h1>
       <div class="article-header__links">
         <a href="#" class="article-header__links_text">Home</a>
@@ -49,11 +49,9 @@ export default {
 <style lang="scss" scoped>
 @import "@/styles/_variables.scss";
 @import "@/styles/_style_default.scss";
-// $bgImage: "../../public/img/header__blog__font.jpg";
 
 .article-header {
   margin-bottom: 200px;
-  // background: url($bgImage);
   height: 356px;
   width: 100%;
   height: 356px;

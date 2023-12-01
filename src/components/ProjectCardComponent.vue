@@ -3,7 +3,7 @@
     <img :src="card.img" :alt="card.title" />
     <button
       class="star"
-      v-bind:class="{ selected: selected, notselected: !selected }"
+      v-bind:class="{ selected: card.like, notselected: !card.like }"
       @click="like"
     >
       <svg
@@ -33,6 +33,7 @@
 </template>
 
 <script>
+import { mapMutations } from "vuex";
 import ButtonComponent from "./ButtonComponent.vue";
 export default {
   components: { ButtonComponent },
@@ -48,26 +49,13 @@ export default {
     },
   },
 
-  data() {
-    return {
-      selected: this.card.like,
-    };
-  },
-
-  mounted() {},
-
   methods: {
+    ...mapMutations(["LIKE"]),
     like() {
-      this.selected = !this.selected;
-      const data = {
+      this.LIKE({
         id: this.card.id,
-        img: this.card.img,
-        title: this.card.title,
-        class: this.card.class,
-        name: this.card.name,
-        like: this.selected,
-      };
-      this.$emit("like", data);
+        like: !this.card.like,
+      });
     },
   },
 };
