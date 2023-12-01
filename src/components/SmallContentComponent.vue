@@ -10,7 +10,7 @@
     </div>
     <div class="small-content__card-box">
       <card-component
-        v-for="item in smallCards.slice(0, 6)"
+        v-for="item in smallCards.slice(0, 3)"
         :key="item.id"
         :carddata="item"
       ></card-component>

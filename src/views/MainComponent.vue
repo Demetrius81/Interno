@@ -1,6 +1,5 @@
 <template>
   <div>
-    <header-component></header-component>
     <greetings-component></greetings-component>
     <large-content-component></large-content-component>
     <statistics-component></statistics-component>
@@ -10,22 +9,20 @@
 </template>
 
 <script>
-import HeaderComponent from "../components/HeaderComponent.vue";
 import GreetingsComponent from "../components/GreetingsComponent.vue";
-import FooterComponent from "../components/FooterComponent.vue";
 import StatisticsComponent from "../components/StatisticsComponent.vue";
 import LargeContentComponent from "../components/LargeContentComponent.vue";
 import SmallContentComponent from "../components/SmallContentComponent.vue";
+import FooterComponent from "@/components/FooterComponent.vue";
 
 export default {
   name: "MainComponent",
   components: {
-    HeaderComponent,
-    FooterComponent,
     GreetingsComponent,
     StatisticsComponent,
     LargeContentComponent,
     SmallContentComponent,
+    FooterComponent,
   },
 };
 </script>

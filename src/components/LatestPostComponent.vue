@@ -20,9 +20,7 @@
           <p class="latest-post__buttobbox_text">26 December,2022</p>
           <button
             class="latest-post__buttobbox_button"
-            v-on:click="
-              moveToDetails('Low Cost Latest Invented Interior Designing Ideas')
-            "
+            @click="moveToDetails()"
           >
             <svg
               width="9"
@@ -57,9 +55,8 @@ export default {
   mounted() {},
 
   methods: {
-    moveToDetails(title) {
-      //   window.location.href = "blog_details.html";
-      console.log(title);
+    moveToDetails() {
+      this.$router.push({ name: "blogdetails" });
     },
   },
 };
@@ -155,6 +152,10 @@ export default {
       border-radius: 26px;
       border: none;
       background: $colorBacgroundBtnBigCard;
+
+      &:hover {
+        background: $colorBacgroundBtnHover;
+      }
     }
   }
 }

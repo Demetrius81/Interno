@@ -60,10 +60,17 @@ export default {
   gap: 20px;
 
   &_image {
+    width: 1201px;
+    height: 799px;
     border-radius: 70px;
     background: $colorBacgroundBigCardImg;
     background-size: cover;
     overflow: hidden;
+
+    & img {
+      width: 1201px;
+      height: 799px;
+    }
   }
 
   &__button-box {

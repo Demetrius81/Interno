@@ -27,7 +27,7 @@
         <h3 class="card__text-box_header">{{ card.title }}</h3>
         <p class="card__text-box_text">{{ card.class }}</p>
       </div>
-      <button-component></button-component>
+      <button-component @clickbtn="clickbtn"></button-component>
     </div>
   </div>
 </template>
@@ -56,6 +56,9 @@ export default {
         id: this.card.id,
         like: !this.card.like,
       });
+    },
+    clickbtn() {
+      this.$router.push({ name: "projectdetails" });
     },
   },
 };
@@ -118,10 +121,6 @@ export default {
   height: 30px;
   border-radius: 15px;
   border: none;
-
-  //   & svg g path {
-  //     fill: aliceblue;
-  //   }
 }
 
 .notselected svg g path {

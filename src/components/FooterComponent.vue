@@ -38,12 +38,12 @@
     </div>
     <div class="footer__pages">
       <h4 class="footer__header">Pages</h4>
-      <a
+      <router-link
         class="footer__text footer__page"
         v-for="link in links"
         :key="link.id"
-        :href="link.url"
-        >{{ link.name }}</a
+        :to="link.url"
+        >{{ link.name }}</router-link
       >
     </div>
     <div class="footer__services"></div>
@@ -63,33 +63,14 @@
 </template>
 
 <script>
+import { mapState } from "vuex";
 import LogoComponent from "./LogoComponent.vue";
 export default {
   components: { LogoComponent },
   name: "FooterComponent",
-
-  data() {
-    return {
-      links: [
-        {
-          name: "Home",
-          url: "index.html",
-        },
-        {
-          name: "Project",
-          url: "project.html",
-        },
-        {
-          name: "Blog",
-          url: "blog.html",
-        },
-      ],
-    };
+  computed: {
+    ...mapState(["links"]),
   },
-
-  mounted() {},
-
-  methods: {},
 };
 </script>
 

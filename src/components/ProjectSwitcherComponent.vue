@@ -47,11 +47,19 @@ export default {
     border: none;
     background: $colorBacgroundMain;
     border-radius: 18px;
+
+    &:hover {
+      background: $colorBacgroundBtnHover;
+    }
   }
 
   &__checked {
     border-radius: 18px;
     background: $colorLogo;
+
+    &:hover {
+      background: $colorLogo;
+    }
   }
 }
 </style>

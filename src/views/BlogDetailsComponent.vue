@@ -1,6 +1,5 @@
 <template>
   <div>
-    <header-component></header-component>
     <article-header-component></article-header-component>
     <details-component></details-component>
     <footer-component></footer-component>
@@ -10,16 +9,14 @@
 <script>
 import ArticleHeaderComponent from "@/components/ArticleHeaderComponent.vue";
 import DetailsComponent from "../components/DetailsComponent.vue";
-import FooterComponent from "../components/FooterComponent.vue";
-import HeaderComponent from "../components/HeaderComponent.vue";
+import FooterComponent from "@/components/FooterComponent.vue";
 export default {
   components: {
-    HeaderComponent,
     DetailsComponent,
-    FooterComponent,
     ArticleHeaderComponent,
+    FooterComponent,
   },
-  name: "InternoBlogDetailsComponent",
+  name: "BlogDetailsComponent",
 };
 </script>
 

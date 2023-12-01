@@ -5,7 +5,7 @@
     </div>
     <div class="small-content__card-box">
       <card-component
-        v-for="item in articlesOnPage"
+        v-for="item in cardsOnPage"
         :key="item.id"
         :carddata="item"
       >
@@ -31,7 +31,7 @@ export default {
     },
   },
   computed: {
-    ...mapGetters(["articlesOnPage"]),
+    ...mapGetters(["cardsOnPage"]),
   },
 };
 </script>
