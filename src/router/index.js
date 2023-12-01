@@ -10,41 +10,46 @@ import ProjectDetailsComponent from "../views/ProjectDetailsComponent.vue";
 Vue.use(VueRouter);
 
 const routes = [
-  {
-    path: "/",
-    name: "main",
-    component: MainComponent,
-  },
-  {
-    path: "*",
-    name: "notfound",
-    component: NotFoundComponent,
-  },
-  {
-    path: "/blog",
-    name: "blog",
-    component: BlogComponent,
-  },
-  {
-    path: "/blog/details",
-    name: "blogdetails",
-    component: BlogDetailsComponent,
-  },
-  {
-    path: "/project",
-    name: "project",
-    component: ProjectComponent,
-  },
-  {
-    path: "/project/details",
-    name: "projectdetails",
-    component: ProjectDetailsComponent,
-  },
+    {
+        path: "/",
+        name: "main",
+        component: MainComponent,
+    },
+    {
+        path: "/interno/",
+        name: "main",
+        component: MainComponent,
+    },
+    {
+        path: "*",
+        name: "notfound",
+        component: NotFoundComponent,
+    },
+    {
+        path: "/blog",
+        name: "blog",
+        component: BlogComponent,
+    },
+    {
+        path: "/blog/details",
+        name: "blogdetails",
+        component: BlogDetailsComponent,
+    },
+    {
+        path: "/project",
+        name: "project",
+        component: ProjectComponent,
+    },
+    {
+        path: "/project/details",
+        name: "projectdetails",
+        component: ProjectDetailsComponent,
+    },
 ];
 
 const router = new VueRouter({
-  mode: "history",
-  routes,
+    mode: "history",
+    routes,
 });
 
 export default router;
